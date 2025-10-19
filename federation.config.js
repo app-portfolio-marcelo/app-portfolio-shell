@@ -1,7 +1,9 @@
 const { withNativeFederation, shareAll } = require('@angular-architects/native-federation/config');
 
 module.exports = withNativeFederation({
-
+  remotes: {
+        solar_consult: "http://localhost:4300/remoteEntry.json", // Reference the remote entry point
+      },
   shared: {
     ...shareAll({ singleton: true, strictVersion: true, requiredVersion: 'auto' }),
   },
