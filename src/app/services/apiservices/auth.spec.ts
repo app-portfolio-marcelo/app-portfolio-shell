@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { MicroFrontend } from './micro-frontend';
+import { Auth } from './auth';
 
-describe('MicroFrontend', () => {
-  let service: MicroFrontend;
+describe('Auth', () => {
+  let service: Auth;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(MicroFrontend);
+    service = TestBed.inject(Auth);
   });
 
   it('should be created', () => {

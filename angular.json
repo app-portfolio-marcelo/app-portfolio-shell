@@ -19,9 +19,21 @@
 					"options": {},
 					"configurations": {
 						"production": {
+							"fileReplacements": [
+								{
+									"replace": "src/environments/environment.ts",
+									"with": "src/environments/environment.prod.ts"
+								}
+							],
 							"target": "app-portifolio:esbuild:production"
 						},
 						"development": {
+														"fileReplacements": [
+								{
+									"replace": "src/environments/environment.ts",
+									"with": "src/environments/environment.dev.ts"
+								}
+							],
 							"target": "app-portifolio:esbuild:development",
 							"dev": true
 						}
